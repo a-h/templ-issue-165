@@ -1,0 +1,17 @@
+package main
+
+script show(message string) {
+		alert(message)
+}
+
+templ page(message string) {
+	<!DOCTYPE html>
+	<html>
+		<head><title>Test</title></head>
+		<body>
+			<h1>Test</h1>
+			<input type="button" value="Click me" onclick={ show(message) }/>
+		</body>
+	</html>
+}
+
